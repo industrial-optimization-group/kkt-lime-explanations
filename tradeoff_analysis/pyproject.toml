@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "explainable_moo"
+version = "0.1.0"
+description = "Implementation of the KKT-based explanations proposed in the article: Can LIME Make Interactive Multiobjective Optimization Methods Explainable?"
+authors = ["giomara-larraga <giomara.lm@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+gekko = "1.2.1"
+Flask = "3.0.3"
+Flask-Cors = "4.0.1"
+numba = "^0.56"
+numpy = "^1.17"
+pandas = "^1.5.3"
+python-dateutil = "^2.9.0.post0"
+scipy = "^1.2"
+shap = "^0.46.0"
+desdeo-problem = "1.5.0"
+desdeo-tools = "1.8.0"
+desdeo-mcdm = "1.3.3"
+desdeo-emo = "1.5.0"
+matplotlib = "^3.4.3"
+scikit-learn = "^1.1"
+odfpy = "^1.4.1"
+jupyterlab = "^3.2.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+flake8 = "^3.9.2"
+ipykernel = "^6.2.0"
+openpyxl = "^3.0.8"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

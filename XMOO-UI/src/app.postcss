@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+.btn {
+	@apply bg-primary-500 text-on-primary-token;
+}
+
+.input {
+	@apply bg-white;
+	font-size: small;
+}
+
+.input[type='range'] {
+	@apply accent-primary-700;
+}
+
+.slider-display {
+	display: flex;
+	justify-content: space-around;
+	margin: -6px 10% 0;
+	font-size: 12px;
+}
+
+.grid-container {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
+	padding-bottom: 1rem;
+}
+
+.label {
+	grid-column: span 3;
+}
+
+.slider {
+	grid-column: span 2;
+}
+
+.input {
+	grid-column: span 1;
+}
+
+#sidebar-left {
+	width: 25%;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+#page-content {
+	padding: 1rem;
+}
+
+.card-header {
+	font-weight: 500;
+}
+
+.box {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-bottom: 15px;
+	border: 1px solid black;
+	clear: both;
+	--tw-space-y-reverse: 0;
+	margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+	margin-right: 0.5rem;
+}
+
+.box-0 {
+	background-color: #5470c6;
+}
+
+.box-1 {
+	background-color: #91cc75;
+}
+
+.box-2 {
+	background-color: #fac858;
+}
+
+.box-3 {
+	background-color: #ee6666;
+}
